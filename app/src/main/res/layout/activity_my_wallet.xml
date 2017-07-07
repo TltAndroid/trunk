@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    >
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/my_wallet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/my_wallet"
+        app:moreText="@string/charge_standard"
+        android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_wallet_title">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/liner_my_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/my_left_money"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/tv_my_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:text="0 RMB"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/item_content_text_size_14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_left_mins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner_my_wallet"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/my_left_mins"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/tv_my_left_mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:text="30分钟"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/item_content_text_size_14sp" />
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray3"
+            android:layout_below="@id/tv_my_left_mins"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_take_mins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/take_mins"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:layout_below="@id/tv_line"
+            android:drawableRight="@drawable/ic_right_arrow"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_left_mins"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/recharge_net_phone"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/order_text_size"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_recharge_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tv_forget_psw"
+            android:textSize="@dimen/login_or_register"
+            android:background="@color/background_blue"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_pay_for_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_for_others"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tv_forget_psw"
+            android:textSize="@dimen/login_or_register"
+            android:background="@color/background_gray3"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_my_wallet_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="@string/my_wallet_describe"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_14"
+            android:lineSpacingExtra="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

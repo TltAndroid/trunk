@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/simple_gray"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:textColor="#454545" 
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+        
+       <ImageView
+        android:id="@+id/qcb"
+        android:layout_width="40dp"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:paddingLeft="5dip"
+        android:src="@drawable/img_logo"
+           android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@+id/qcb"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_alignTop="@id/qcb"
+        android:textSize="20sp"
+        android:paddingTop="1dip"
+        android:textColor="@color/black"
+        android:text="hhh"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@+id/qcb"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_below="@id/name"
+        android:textSize="18sp"
+        android:paddingBottom="1dip"
+        android:text="hhh"/>
+    </RelativeLayout>
+
+    <!-- <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="hhhh"
+        android:textColor="#336598" />
+ -->
+</LinearLayout>

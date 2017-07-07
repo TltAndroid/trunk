@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorTrackTabViewIndicator"><attr format="color" name="ctTabSelectedTextColor"/><attr format="color" name="ctTabIndicatorColor"/><attr format="color" name="ctTabTextColor"/><attr format="dimension" name="ctTabTextSize"/><attr format="dimension" name="ctTabWidth"/><attr format="enum" name="ctTabGravity">
+            <enum name="Grivity_Fill" value="0"/>
+            <enum name="Grivity_Center" value="1"/>
+        </attr><attr name="ctMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="ColorTrackView"><attr format="string" name="ctvText"/><attr format="dimension" name="ctvText_size"/><attr format="color" name="ctvText_origin_color"/><attr format="color" name="ctvText_change_color"/><attr format="float" name="ctvProgress"/><attr format="integer" name="ctvDirection"/></declare-styleable>
+    <string name="app_name">Library</string>
+</resources>

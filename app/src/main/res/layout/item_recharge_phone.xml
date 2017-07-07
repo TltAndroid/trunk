@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liner_item_recharge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item_view_border"
+    >
+
+        <TextView
+            android:id="@+id/tv_orignal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:text="@string/my_left_money"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/tv_sale_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:text="@string/my_left_money"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/tv_on_sale_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:text="@string/my_left_money"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>

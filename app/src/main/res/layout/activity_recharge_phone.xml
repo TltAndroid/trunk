@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.sirc.tlt.ui.activity.RechargePhoneActivity">
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/tlt_recharge_phone"
+        app:canBack="true"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+>
+        <RadioButton
+            android:id="@+id/rb_recharge_phone"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/tlt_recharge_phone"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="@dimen/sp_16"
+            android:padding="5dp"
+            android:checked="true"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rb_recharge_flow"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/recharge_flow"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="@dimen/sp_16"
+            android:padding="5dp"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/input_phone"
+        android:textColor="@color/text_black"
+        android:background="@null"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:textSize="24sp"
+        style="@style/editTextWithDelete"
+        />
+
+    <TextView
+        android:id="@+id/tv_phone_belong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_gray"
+        android:gravity="left"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_gray3"
+        android:layout_marginTop="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/go_pay"
+        android:textSize="@dimen/login_or_register"
+        android:background="@color/background_blue"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

@@ -1,0 +1,242 @@
+<resources>
+    <string name="app_name">台陆通</string>
+    <string name="home_page">生活服务</string>
+    <string name="free_phone">免费通话</string>
+    <string name="ask_answer">逗叁仝</string>
+    <string name="user_profile">我的</string>
+    <string name="tlt_tt">台陆头条</string>
+
+    <string name="app_describe_title">台陆通公共信息服务平台</string>
+    <string name="app_describe_url">http://www.dalutone.com/</string>
+    <string name="app_describe_content">台陆通通过“把服务送上岛，把台胞请过来”核心价值，提供卡式台胞证—申办零距离的服务，同时推出大陆临时驾照--自驾游旅游新体验的服务以及预约电话卡及流量卡办理等服务。通过零距离的在线服务，让台湾民众感受到大陆旅游出行的创新服务，最终实现海峡友谊旅行社在沟通两岸、创造价值的核心理念与价值。</string>
+    <string name="app_describe_end">福建海峡友谊通讯服务有限公司</string>
+    <string name="app_copyright">Copyright ©2017</string>
+
+    <string name="tlt_service">台陆通服务</string>
+    <string name="guess_fancy">猜您喜欢</string>
+    <string name="third_service">第三方服务</string>
+    <string name="find_more">更多</string>
+    <string name="activity">活动</string>
+
+    <!--台陆通模块内容-->
+    <string name="tlt_phone_card">電話卡</string>
+    <string name="tlt_flow_card">流量卡</string>
+    <string name="tlt_rent_car">駕駛證</string>
+    <string name="tlt_tw_identify_card">台胞卡</string>
+    <string name="tlt_tw_entry_card">入台簽</string>
+    <string name="tlt_rent_mifi">共享MIFI</string>
+    <string name="tlt_recharge_phone">手机充值</string>
+    <string name="tlt_boat_ticket">海峽/麗娜號</string>
+    <string name="tlt_railway_ticket">动车票</string>
+    <string name="tlt_legwork">帮您跑腿</string>
+
+
+    <!--第三方服务-->
+    <string name="third_service_food">美食</string>
+    <string name="third_service_hotel">酒店</string>
+    <string name="third_service_bus">公交</string>
+    <string name="third_service_zhengxin">正心堂</string>
+    <string name="third_service_express">快递</string>
+    <string name="third_service_life">生活</string>
+    <string name="third_service_travel_around">周边游</string>
+    <string name="third_service_eight_diagrams">周易人生</string>
+
+    <!--标题模块-->
+    <string name="home_title">主页</string>
+
+    <!--订单模块-->
+    <string name="my_order">我的订单</string>
+    <string name="check_all_order">查看全部订单</string>
+    <string name="wait_to_pay">待支付</string>
+    <string name="wait_to_comment">待点评</string>
+    <string name="already_finished">已完成</string>
+    <string name="refund">退款</string>
+
+    <string name="my_wallet">我的钱包</string>
+    <string name="my_points">积分</string>
+
+    <string name="common_infos">常用信息</string>
+    <string name="my_collections">我的收藏</string>
+    <string name="settings">设置</string>
+    <string name="more">更多</string>
+    <string name="suggestions">意见反馈</string>
+
+    <!--问答模块-->
+    <string name="ask">提问</string>
+    <string name="answer">回答</string>
+    <string name="all_questions">大家提问</string>
+
+    <string name="concern_question">关注问题</string>
+    <string name="already_concerned">已关注</string>
+    <string name="ask_question">有问必答</string>
+    <string name="answer_question">帮忙回答</string>
+    <string name="hot_questions">热门话题</string>
+    <string name="lasted_questions">最新话题</string>
+    <string name="my_collected_question">我的收藏</string>
+    <string name="question_detail">问题详情</string>
+
+    <string name="question_type">请选择问题类型(选填)</string>
+    <string name="question_title">请填写要提问的内容</string>
+    <string name="question_describe">请填写问题相关的描述信息(选填)</string>
+
+
+    <string name="input_phone_or_email">请输入邮箱</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_orignal_psw">请输入原始密码</string>
+    <string name="go_to_register">还没有台陆通账号？去注册</string>
+    <string name="go_to_login">已有台陆通账号？去登陆</string>
+    <string name="update_password">修改密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="version_update">版本信息</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="about_us">关于我们</string>
+    <string name="law_declaration">法律声明</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+
+    <string name="sms_registe">短信注册</string>
+    <string name="email_registe">邮箱注册</string>
+    <string name="send_sms_code">发送短信验证码</string>
+    <string name="send_email_code">发送邮箱验证码</string>
+    <string name="not_land_phone">无大陆手机号码</string>
+    <string name="law_register">浏览并接受《使用协议》</string>
+
+    <string name="input_email">请输入邮箱地址</string>
+
+    <string name="input_sms_code">请输入短信验证码</string>
+    <string name="input_email_code">请输入邮箱验证码</string>
+    <string name="registe_success">注册成功</string>
+    <string name="registe_fail">注册失败</string>
+
+    <!--拨打电话-->
+    <string name="leave_minute">剩余大陆通话时长</string>
+    <string name="add_for_mins">签到可增加时长</string>
+    <string name="btn_for_sign">去充值</string>
+
+    <!--签到-->
+    <string name="sign_in_title">每日签到</string>
+    <string name="btn_sign_in">签  到</string>
+    <string name="sign_in_remind">签到提醒</string>
+    <string name="remind_time">提醒时间</string>
+
+
+    <!--我的钱包-->
+    <string name="my_charge">我的资费</string>
+    <string name="charge_standard">资费</string>
+    <string name="left_mins">剩余分钟数</string>
+    <string name="take_mins">赚分钟</string>
+    <string name="recharge_net_phone">充值网络电话</string>
+    <string name="recharge">充值</string>
+    <string name="pay_for_others">代人支付</string>
+    <string name="my_left_money">我的余额</string>
+    <string name="my_left_mins">我的分钟数</string>
+    <string name="my_wallet_describe">
+
+温馨提示:\n
+1.免费分钟数有效期为到账日起30日;\n
+2.拨打电话每分钟消耗1分钟免费分钟数;\n
+3.免费分钟数只适用于通过网路拨打大陆任一电话与台湾固定电话。\n
+4.使用本免费电话拨打，运营商不会收取任何费用;\n
+5.拨打台湾移动电话及其他国际地区请在资费一览查询。
+</string>
+
+    <string name="charge_describe">
+温馨提示:\n
+1.资费计数以分钟为单位的;\n
+        2.使用网络拨打，运营商不会收取任何费用;\n
+3.拨打国际指定地区请拨打400-800-1969客服加以查询。
+
+
+    </string>
+
+
+    <!--意见反馈-->
+    <string name="hint_suggest">请留下您的宝贵意见,我们将不断改进</string>
+    <string name="contact_suggest">请留下您的手机号码或者邮箱</string>
+    <string name="btn_submit">提交</string>
+    <string name="toast_suggest">请填写完所有信息后再提交</string>
+    <string name="toast_suggest_submit">您提的问题，我们会尽快改进。谢谢</string>
+
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="button_ok">OK</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+
+    <!--好康头条-->
+    <string name="toutiao">好康头条</string>
+    <string name="title_toutiao">头条</string>
+    <string name="my_channel">我的频道</string>
+    <string name="other_channel">频道推荐</string>
+    <string name="edit">编辑</string>
+    <string name="detail_write_comment">写评论...</string>
+    <string name="say_something">说点什么吧...</string>
+    <string name="common_send">发表</string>
+
+    <string name="native_contact">通讯录</string>
+    <string name="notification_sign_title">签到提醒</string>
+    <string name="notification_sign_content">该去签到啦</string>
+
+
+    <string name="where_go_weekend">周末去哪儿</string>
+
+    <string name="earn_mins">赚分钟数</string>
+    <string name="share_for_gift">推荐有礼</string>
+    <string name="invite_friends">邀请好友</string>
+    <string name="earn_mins_describe">成功邀请一用户下载注册台陆通APP即可获得30分钟免费通话时间</string>
+    <string name="invite_describe">填写成功后，双方获赠30分钟</string>
+    <string name="who_invite_you">谁邀请你的，就填谁的</string>
+    <string name="invite_person">邀请人</string>
+    <string name="sms_invite">短信邀请</string>
+    <string name="wechat_invite">微信邀请</string>
+    <string name="facebook_invite">FaceBook邀请</string>
+    <string name="line_invite">Line邀请</string>
+    <string name="others_invite">其他方式</string>
+    <string name="invite_rules">活动规则：\n您的好友安装下载“台陆通”APP后，在“邀请人”一栏中填写您的注册手机号，填写成功后，您和您的好友都将获得30分钟免费通话。
+</string>
+    <string name="not_login">点击登陆/注册</string>
+    <string name="QRcode_describe">扫一扫,下载台陆通APP</string>
+
+    <string name="order_detail">订单详情</string>
+    <string name="googs_name">商品名称</string>
+    <string name="goods_type">商品类别</string>
+    <string name="order_price">订单总价</string>
+    <string name="goods_count">商品数量</string>
+    <string name="goods_detail">商品详情</string>
+    <string name="order_contact_person">联系人 :</string>
+    <string name="order_contact_phone">联系电话 :</string>
+    <string name="order_pay_type">支付方式 :</string>
+    <string name="order_pay_online">在线支付</string>
+    <string name="take_order_time">下单时间 :</string>
+    <string name="commit_pay">确认支付</string>
+    <string name="choose_pay_type">选择支付方式</string>
+
+    <string name="net_error">访问网络失败，请检查网络连接</string>
+    <string name="search">搜索</string>
+
+    <string name="update_data">正在提交,请稍等...</string>
+    <string name="loading">正在加载...</string>
+
+    <string name="notify_news">消息</string>
+    <string name="recharge_flow">流量充值</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="go_pay">去支付</string>
+
+
+    <string name="tlw_service_card">证照</string>
+    <string name="tlw_service_communication">通讯</string>
+    <string name="tlw_service_traffic">交通</string>
+    <string name="tlw_service_life">生活服务</string>
+
+
+    <string name="tv_choose_cl">大陆(+86)</string>
+    <string name="tv_choose_tw">台湾(+00886)</string>
+    <string name="tv_country_area">国家/地区</string>
+
+
+    <!--微信支付错误码-->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+</resources>

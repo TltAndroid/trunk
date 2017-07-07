@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Core-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="27dcf5889fee23416fadfeae3d1d11f3d06b27d1">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Core-3.0.0_06c5a3ec7a004aa5c723755d5cf6821ae68f533d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/81704c08a0e4a9308289c9785d080c8570199d32/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="284e4a41a5b9f1b8c97b16b685af7b99724bca2d">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_a6beaf0a5c272f2e8fff27b843053a25db87438a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/293f389cc8154763502ca4cb4d90e9f5ac948935/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_f11c5b5f172f5a735135a44ae4469731f4f30895.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/BGABadgeView/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05de1772b746a7b7085f1b0d4bb398ec45038d4c">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_dd03961e23f34cff66c2c04ca44ebb75753129ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/352e303ea93a3d1e39f5712ff97c2c293f438c8c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c75007d82461aecc56df64e675148a883096c790">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_f49ce2f0b40d930bbe89914a71a1c3a5ac26e16f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/e47655fd1ce2efd43550283327eca9aeec8e6a4a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_3cb0ef77c3bdc4c9e7303bd4e41be0530234e5ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/68bc30305e05ab9f57aa970c983b227c87fe38c4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_20aa1555f0a61b579a035ee8fa3bc93fdb5532f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/c0a9b3b8f0ccdfd82dec5f19ca255fc20687a5f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_cf263f9923bd3900750068d5038f117711ca9a8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-SinaWeibo-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="989bcd864618e19f45cc130a5a2c708cd28c44d4">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-SinaWeibo-3.0.0_42936c3dc2637e3bae261c8d93d7dd53825ae4bd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-SinaWeibo-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="989bcd864618e19f45cc130a5a2c708cd28c44d4">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-SinaWeibo-3.0.0_42936c3dc2637e3bae261c8d93d7dd53825ae4bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Core-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="27dcf5889fee23416fadfeae3d1d11f3d06b27d1">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-Core-3.0.0_06c5a3ec7a004aa5c723755d5cf6821ae68f533d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Wechat-Moments-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d844eb32f3fea6d58c566fe7a519328a01873a15">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Moments-3.0.0_d5c1d1ad0eb6036dcd5305158a1392f519b99da9/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e37d9fd88c59a0a5efb61542a7d2870ff4d746f">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_9ef57ee1bbb5d2bc4b282abc93b77e0798b4c413.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/MobCommons-2017.0608.1618.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26d8b21098208806ac92abba3cbbf9859cda903a">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/MobCommons-2017.0608.1618_03220685459f524414c3394b4ecd363b73e4245e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Line-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="55c34a9b07076fbd2f39602612f8257ee8c3656e">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Line-3.0.0_2ee8308ea5f84d20e19b95ba868a110e6fddf65e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/fastjson-1.1.56.android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4eef0ac3ef5e18db7af5d44ca0228ca5c29dd2f6">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/fastjson-1.1.56.android_094dba7c14335b99fe8b68f0d959961c35e0daf4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/MobCommons-2017.0608.1618.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26d8b21098208806ac92abba3cbbf9859cda903a">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/MobCommons-2017.0608.1618_03220685459f524414c3394b4ecd363b73e4245e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/fycloud_2.0.0_release.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="02c05b90d4f1962bdbd111058ed21c019dfe5220">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/fycloud_2.0.0_release_0ed18f15051aa510395544ef33fc413cf45f05c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Wechat-Moments-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d844eb32f3fea6d58c566fe7a519328a01873a15">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-Wechat-Moments-3.0.0_d5c1d1ad0eb6036dcd5305158a1392f519b99da9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/MobTools-2017.0608.1618.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcd18b5e54c100ded555e92c371c16bea49002ed">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/MobTools-2017.0608.1618_edd4d951eb3d817f94adcbff5df33a2c534c5970.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/fastjson-1.1.56.android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4eef0ac3ef5e18db7af5d44ca0228ca5c29dd2f6">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/fastjson-1.1.56.android_094dba7c14335b99fe8b68f0d959961c35e0daf4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/fycloud_2.0.0_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="02c05b90d4f1962bdbd111058ed21c019dfe5220">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/fycloud_2.0.0_release_0ed18f15051aa510395544ef33fc413cf45f05c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Line-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="55c34a9b07076fbd2f39602612f8257ee8c3656e">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-Line-3.0.0_2ee8308ea5f84d20e19b95ba868a110e6fddf65e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/f7c1e9986789fc0fc6cb8b928ab3502f89243013/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_76e73383b0f846b4d3fb40acd8ac5b890bbd8b24.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/MobTools-2017.0608.1618.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcd18b5e54c100ded555e92c371c16bea49002ed">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/MobTools-2017.0608.1618_edd4d951eb3d817f94adcbff5df33a2c534c5970/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_7a68346e9ed4be2b5456eb2c869a2bf1c43c2350.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Email-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7dc6ca66ef0eb8a3a71179adcda38ad7a00961a4">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-Email-3.0.0_a82908c82c8d976805764e39e59073703ffa1b09.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Wechat-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="549dda1a4abc3aa8914df75649f660eaad51c85c">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-3.0.0_75f79ae60ab4b060354248b2da172c43f9c18154/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Wechat-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="549dda1a4abc3aa8914df75649f660eaad51c85c">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-Wechat-3.0.0_75f79ae60ab4b060354248b2da172c43f9c18154.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-ShortMessage-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ab72ad71ed6561d1f10ea248c5c487aaf25d4046">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-ShortMessage-3.0.0_5a47e164d6c861a85c9733d12d0c58c12cfe7609/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/7acb62c6bc28ef4451548b019db643ce14207bd1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_ba26cc0b3be354e08d60b132cb84ecc0bb2327f7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Wechat-Core-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="711000ab447be3b66d57e5c5ac99ac74f1f93e1b">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Core-3.0.0_4ef9126849bee997a32a46b0ec115461b980f97e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/alipaySingle-20170510.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78241a93d61c4c13953ef7a02e63cf4dc5bea688">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/alipaySingle-20170510_3904070cf26f4a63a34ae6ef4f54b6fab66890b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Wechat-Core-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="711000ab447be3b66d57e5c5ac99ac74f1f93e1b">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-Wechat-Core-3.0.0_4ef9126849bee997a32a46b0ec115461b980f97e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/alipaySingle-20170510.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78241a93d61c4c13953ef7a02e63cf4dc5bea688">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/alipaySingle-20170510_3904070cf26f4a63a34ae6ef4f54b6fab66890b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2ca7967ef9ed69d038bb9fc0cac456cf8c025be3/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-ShortMessage-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ab72ad71ed6561d1f10ea248c5c487aaf25d4046">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-ShortMessage-3.0.0_5a47e164d6c861a85c9733d12d0c58c12cfe7609.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/8a5867010fccdcb57a1b93402fb2a92e5fac2025/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_3ab82f997d372ce301b4b5b4707faea12db6a621.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-QQ-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="79d8de16734d7a07503d206fe3a93ba393e3b573">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-QQ-3.0.0_dd6bc3d1b4406ac83231883e510adb0e2bafcff9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-QQ-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="79d8de16734d7a07503d206fe3a93ba393e3b573">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-QQ-3.0.0_dd6bc3d1b4406ac83231883e510adb0e2bafcff9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d06610faea55731080563d33c01644eedb30de05">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4616fb493963b9e1a7734f3dfe481c680a126619/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/4302e9ec608ea9cdcb40e2c3d6f0b8a5b1597c83/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_6bc4c95dda334e83f5f29598ea2bc95f7569e524.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/.android/build-cache/db8c66f9c2edae4a5a0fd4a045cb196fa92fa116/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/classes_af55f095255224d5bbfafec388b58c609e170333.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Email-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7dc6ca66ef0eb8a3a71179adcda38ad7a00961a4">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Email-3.0.0_a82908c82c8d976805764e39e59073703ffa1b09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Facebook-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="35a97aadb7c50d07350333d16473967150dfa22e">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Facebook-3.0.0_ba9e0b518164f8f61fc70be22d778c893a3d6d39/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Hooliganiam/Desktop/trunk/app/libs/ShareSDK-Facebook-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="35a97aadb7c50d07350333d16473967150dfa22e">
+        <dex dex="/Users/Hooliganiam/Desktop/trunk/app/build/intermediates/pre-dexed/debug/ShareSDK-Facebook-3.0.0_ba9e0b518164f8f61fc70be22d778c893a3d6d39.jar" />
+    </item>
+
+</items>

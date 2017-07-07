@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/operate_psw_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:canBack="true"/>
+
+    <LinearLayout
+        android:id="@+id/rl_account_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operate_psw_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <com.sirc.tlt.ui.view.ClearableEditText
+            android:id="@+id/update_psw_edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/editTextWithDelete"
+            android:hint="@string/input_phone"
+            android:textColor="@color/text_gray"
+            android:background="@null"/>
+
+
+        <com.sirc.tlt.ui.view.ClearableEditText
+            android:id="@+id/original_psw_edit_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            style="@style/editTextWithDelete"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/update_psw_edit_phone"
+            android:hint="@string/input_orignal_psw"
+            android:textColor="@color/text_gray"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:background="@null"
+            />
+
+
+        <com.sirc.tlt.ui.view.ClearableEditText
+            android:id="@+id/update_psw_edit_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            style="@style/editTextWithDelete"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/update_psw_edit_phone"
+            android:hint="@string/input_password"
+            android:textColor="@color/text_gray"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_operate_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修 改 密 码"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/login_or_register"
+        android:background="@color/background_blue"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

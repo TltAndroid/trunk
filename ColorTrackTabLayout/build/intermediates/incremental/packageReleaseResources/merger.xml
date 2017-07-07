@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/src/main/res"/><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/build/generated/res/rs/release"/><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/build/generated/res/resValues/release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/src/release/res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/src/main/res"><file name="fragment_my" path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/src/main/res/layout/fragment_my.xml" qualifiers="" type="layout"/><file path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="ColorTrackView">
+        <attr format="string" name="ctvText"/>
+        <attr format="dimension" name="ctvText_size"/>
+        <attr format="color" name="ctvText_origin_color"/>
+        <attr format="color" name="ctvText_change_color"/>
+        <attr format="float" name="ctvProgress"/>
+        <attr format="integer" name="ctvDirection"/>
+    </declare-styleable><declare-styleable name="ColorTrackTabViewIndicator">
+        <attr format="color" name="ctTabSelectedTextColor"/>
+        <attr format="color" name="ctTabIndicatorColor"/>
+        <attr format="color" name="ctTabTextColor"/>
+        <attr format="dimension" name="ctTabTextSize"/>
+        <attr format="dimension" name="ctTabWidth"/>
+        <attr format="enum" name="ctTabGravity">
+            <enum name="Grivity_Fill" value="0"/>
+            <enum name="Grivity_Center" value="1"/>
+        </attr>
+        <attr name="ctMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr>
+
+    </declare-styleable></file><file path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">Library</string></file></source><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/build/generated/res/rs/release"/><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/build/generated/res/resValues/release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="/Users/Hooliganiam/Desktop/trunk/ColorTrackTabLayout/src/release/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="ColorTrackTabViewIndicator"><attr format="color" name="ctTabSelectedTextColor"/><attr format="color" name="ctTabIndicatorColor"/><attr format="color" name="ctTabTextColor"/><attr format="dimension" name="ctTabTextSize"/><attr format="dimension" name="ctTabWidth"/><attr format="enum" name="ctTabGravity">
+            <enum name="Grivity_Fill" value="0"/>
+            <enum name="Grivity_Center" value="1"/>
+        </attr><attr name="ctMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr></declare-styleable><declare-styleable name="ColorTrackView"><attr format="string" name="ctvText"/><attr format="dimension" name="ctvText_size"/><attr format="color" name="ctvText_origin_color"/><attr format="color" name="ctvText_change_color"/><attr format="float" name="ctvProgress"/><attr format="integer" name="ctvDirection"/></declare-styleable></configuration></mergedItems></merger>

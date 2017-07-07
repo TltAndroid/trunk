@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_line"/>
+        <LinearLayout style="@style/liner_phone_num">
+            <ImageButton
+                android:id="@+id/ibtn_num_1"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_1"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_num_2"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_2"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+            <ImageButton
+                android:id="@+id/ibtn_num_3"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_3"
+                 />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"/>
+
+        <LinearLayout style="@style/liner_phone_num">
+
+            <ImageButton
+                android:id="@+id/ibtn_num_4"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_4"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+            <ImageButton
+                android:id="@+id/ibtn_num_5"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_5"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+            <ImageButton
+                android:id="@+id/ibtn_num_6"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_6"
+                 />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"/>
+
+        <LinearLayout style="@style/liner_phone_num">
+
+            <ImageButton
+                android:id="@+id/ibtn_num_7"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_7"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+            <ImageButton
+                android:id="@+id/ibtn_num_8"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_8"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+            <ImageButton
+                android:id="@+id/ibtn_num_9"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_9"
+                 />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"/>
+
+        <LinearLayout style="@style/liner_phone_num">
+
+            <ImageButton
+                android:id="@+id/ibtn_num_left"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_left"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+            <ImageButton
+                android:id="@+id/ibtn_num_0"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_0"
+                 />
+            <include layout="@layout/view_vertical_line"/>
+            <ImageButton
+                android:id="@+id/ibtn_num_right"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/img_phone_num_right"
+                 />
+        </LinearLayout>
+        <include layout="@layout/view_line"/>
+    </LinearLayout>
+</LinearLayout>

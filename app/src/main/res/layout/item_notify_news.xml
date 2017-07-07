@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/simple_gray"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_notify_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2017-5-30"
+        android:textSize="@dimen/sp_14"
+        android:padding="5dp"
+        android:textColor="@color/text_gray"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_order"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="订单已完成"
+            android:textSize="@dimen/sp_16"
+            android:padding="5dp"
+            android:textColor="@color/text_black"
+            android:layout_alignParentTop="true"
+            />
+
+        <ImageView
+            android:id="@+id/img_order"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tv_state"
+            android:layout_margin="5dp"
+            android:src="@drawable/head_me"/>
+        <TextView
+            android:id="@+id/tv_order_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textSize="@dimen/sp_14"
+            android:padding="5dp"
+            android:textColor="@color/text_gray"
+            android:layout_toRightOf="@id/img_order"
+            android:layout_below="@id/tv_state"
+            />
+        <TextView
+            android:id="@+id/tv_order_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_gray"
+            android:layout_toRightOf="@id/img_order"
+            android:layout_below="@id/tv_order_title"
+            android:textSize="@dimen/sp_14"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

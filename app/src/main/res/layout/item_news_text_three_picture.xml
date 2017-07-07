@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/news_title"
+            android:text="贵州选举产生出席党的十九大代表 习近平全票当选。贵州选举产生出席党的十九大代表 习近平全票当选。"/>
+        <LinearLayout
+            android:id="@+id/ll_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/iv_one"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/news_img_height"
+                android:scaleType="fitXY"
+                android:background="@android:color/holo_blue_light"/>
+            <ImageView
+                android:id="@+id/iv_two"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/news_img_height"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/holo_blue_light"/>
+            <ImageView
+                android:id="@+id/iv_three"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/news_img_height"
+                android:scaleType="fitXY"
+                android:background="@android:color/holo_blue_light"/>
+        </LinearLayout>
+        <include layout="@layout/item_news_left_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_imgs"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/divider_light_gray"/>
+</LinearLayout>

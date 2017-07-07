@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sirc.tlt.ui.activity.AboutUsActivity">
+
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/about_us"
+        app:canBack="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        >
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/logo"
+        />
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_logo"
+            android:text="@string/app_describe_title"
+            android:layout_alignTop="@id/img_logo"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/title_text_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_logo"
+            android:layout_below="@id/tv_app_title"
+            android:text="@string/app_describe_url"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/sp_16"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_app_describe_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="@string/app_describe_content"
+        android:textSize="@dimen/sp_16"
+        android:background="@drawable/text_view_border"
+        android:lineSpacingExtra="3dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/app_describe_end"
+        android:textColor="@color/text_gray"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/app_copyright"
+        android:textColor="@color/text_gray"
+        android:gravity="center"/>
+</LinearLayout>

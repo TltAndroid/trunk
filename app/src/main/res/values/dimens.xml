@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--字体大小控制-->
+    <!--tab标签文字大小-->
+    <dimen name="tab_text_size">10sp</dimen>
+    <!--标题字体大小-->
+    <dimen name="title_text_size">18sp</dimen>
+    <!--台陆通服务内容字体代销-->
+    <dimen name="tlt_content_text_size">14sp</dimen>
+    <!--订单字体大小-->
+    <dimen name="order_text_size">16sp</dimen>
+    <!--设置等列表字体大小-->
+    <dimen name="setting_text_size">16sp</dimen>
+    <dimen name="item_content_text_size_14sp">14sp</dimen>
+
+    <!--点赞等字体大小-->
+    <dimen name="questions_comment_text_size">16sp</dimen>
+    <dimen name="questions_text_size_12sp">12sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="login_or_register">16sp</dimen>
+
+    <!--好康头条的item的图片大小-->
+    <dimen name="news_img_height">80dp</dimen>
+    <dimen name="news_gallery_height">200dp</dimen>
+    <dimen name="title_bar_height">44.0dip</dimen>
+    <dimen name="comment_write_bar_height">44.0dip</dimen>
+
+
+    <dimen name="item_height">60dp</dimen>
+
+
+    <dimen name="detail_question_title">16sp</dimen>
+    <dimen name="detail_question_content">14sp</dimen>
+</resources>

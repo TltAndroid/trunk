@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1296db" />
+    <stroke android:width="1dip" android:color="#1296db" />
+    <corners android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"
+        android:bottomRightRadius="2dp"
+        android:bottomLeftRadius="2dp"/>
+</shape>
+
+    <!--solid设置填充颜色，颜色值以#80开头表示透明 stroke 设置边框宽度，颜色值 corners设置圆角-->

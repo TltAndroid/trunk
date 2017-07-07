@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/simple_gray"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/collect_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/collection_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_collect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/text_gray"
+            android:dividerHeight="1px"
+            android:cacheColorHint="@null"
+            android:background="@color/white"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>

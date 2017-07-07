@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context="com.sirc.tlt.ui.activity.ChooseTypeActivity">
+
+
+    <TextView
+        android:id="@+id/tv_item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/channel_gray"
+        android:text="测试"
+        android:gravity="center"
+        android:background="@drawable/bg_channel_shape"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

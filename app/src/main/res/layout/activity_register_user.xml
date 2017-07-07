@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/simple_gray"
+    android:id="@+id/rl_register_user"
+    tools:context="com.sirc.tlt.ui.activity.RegisterUserActivity">
+
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/register_user_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/sms_registe"
+        />
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/register_user_title"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/tv_show_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_black"
+        android:layout_marginTop="140dp"
+        android:layout_below="@id/register_user_title"/>
+
+    <com.sirc.tlt.ui.view.ClearableEditText
+        android:id="@+id/edit_register_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/editTextWithDelete"
+        android:textColor="@color/text_black"
+        android:background="@null"
+        android:layout_below="@id/tv_show_username"
+        android:textSize="@dimen/login_or_register"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/text_gray"
+        android:hint="@string/input_email_code"
+        />
+
+    <com.sirc.tlt.ui.view.ClearableEditText
+        android:id="@+id/edit_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/editTextWithDelete"
+        android:textColor="@color/text_black"
+        android:background="@null"
+        android:layout_below="@id/edit_register_code"
+        android:textSize="@dimen/login_or_register"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:hint="@string/input_password"
+        android:textColorHint="@color/text_gray"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btn_register_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edit_input_password"
+        android:text="@string/register"
+        android:background="@color/background_blue"
+        android:textSize="@dimen/login_or_register"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

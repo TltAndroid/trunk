@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:src="@drawable/head_me"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_margin="5dp"
+        >
+       <TextView
+           android:id="@+id/tv_guess_fancy_title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="123"
+           android:textColor="@color/text_black"
+           android:textSize="@dimen/title_text_size"
+           android:padding="3dp"
+           android:gravity="center_vertical"
+           />
+        <TextView
+            android:id="@+id/tv_guess_fancy_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017.4.3"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/tlt_content_text_size"
+            android:layout_below="@id/tv_guess_fancy_title"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_guess_fancy_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在漳州举办"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/tlt_content_text_size"
+            android:layout_below="@id/tv_guess_fancy_title"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_guess_fancy_time"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_guess_fancy_resource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jin"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/tlt_content_text_size"
+            android:layout_below="@id/tv_guess_fancy_city"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_guess_fancy_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.7万回复"
+            android:textColor="@color/text_gray"
+            android:textSize="20dp"
+            android:layout_below="@id/tv_guess_fancy_city"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/text_view_border"/>
+    </RelativeLayout>
+
+</LinearLayout>

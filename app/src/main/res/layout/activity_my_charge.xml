@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/simple_gray"
+>
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/my_charge_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/my_charge"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/img_charge"
+        android:background="@color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/tv_my_wallet_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="@string/charge_describe"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_14"
+        android:lineSpacingExtra="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

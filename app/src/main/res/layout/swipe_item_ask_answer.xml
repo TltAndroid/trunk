@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.sirc.tlt.ui.view.DrawableCenterTextView
+        android:id="@+id/item_tv_delete"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        android:text="删 除"
+        android:textColor="@color/red"
+        android:drawableLeft="@drawable/add_channels_close"
+        android:layout_toRightOf="@+id/liner"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+
+    <include layout="@layout/item_ask_answer"></include>
+
+</com.daimajia.swipe.SwipeLayout>

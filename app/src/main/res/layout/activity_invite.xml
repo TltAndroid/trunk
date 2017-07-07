@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/simple_gray"
+    android:orientation="vertical"
+    tools:context="com.sirc.tlt.ui.activity.InviteActivity">
+
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/invite_friend_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/share_for_gift"
+        app:canBack="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="@string/invite_describe"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:focusable="true"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/invite_person"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+        <com.sirc.tlt.ui.view.ClearableEditText
+            android:id="@+id/edit_invite_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textSize="@dimen/sp_16"
+            android:inputType="number"
+            android:hint="@string/who_invite_you"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="@string/invite_describe"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_invite_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/invite_friends"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/title_text_size"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_wechat_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/wechat_invite"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:drawableRight="@drawable/ic_right_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray3"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_facebook_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/facebook_invite"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:drawableRight="@drawable/ic_right_arrow"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray3"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_line_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/line_invite"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:drawableRight="@drawable/ic_right_arrow"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray3"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_others_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/others_invite"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:drawableRight="@drawable/ic_right_arrow"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_invite_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/btn_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_blue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="@string/invite_rules"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

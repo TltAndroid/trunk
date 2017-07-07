@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/contact_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/native_contact"/>
+
+    <com.sirc.tlt.ui.view.SearchEditText
+        android:id="@+id/filter_edit"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="姓名"
+        android:textSize="16dp" 
+        android:focusableInTouchMode="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_below="@id/contact_title"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_kefu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/filter_edit"
+        >
+        <ImageView
+            android:id="@+id/qcb"
+            android:layout_width="40dp"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:paddingLeft="5dip"
+            android:src="@drawable/img_logo"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@+id/qcb"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_alignTop="@id/qcb"
+            android:textSize="@dimen/sp_16"
+            android:paddingTop="1dip"
+            android:textColor="@color/text_black"
+            android:text="台陆通客服热线"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@+id/qcb"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_below="@id/name"
+            android:textSize="@dimen/sp_16"
+            android:paddingBottom="1dip"
+            android:text="400-800-1969"
+            android:layout_marginBottom="3dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_gray3"
+        android:layout_below="@id/rl_contact_kefu"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_line"
+        >
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:cacheColorHint="#00000000"
+
+            />
+
+        <TextView
+            android:id="@+id/title_layout_no_friends"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="#E0E0E0"
+            android:gravity="center_vertical"
+            android:text="没有匹配的联系人"
+            android:textColor="#454545"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/title_layout_catalog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/simple_gray"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="5dip"
+                android:textColor="#454545"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/item_view_border_pressed"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.sirc.tlt.ui.activity.nativeContact.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</RelativeLayout>

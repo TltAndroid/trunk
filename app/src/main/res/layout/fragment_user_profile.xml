@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/simple_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00000000"
+        />
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/user_profile_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.sirc.tlt.ui.view.CircleImageView
+                    android:id="@+id/user_profile_head_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/head_me" />
+
+                <TextView
+                    android:id="@+id/tv_user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_profile_head_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="张三"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/tlt_content_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_user_profile"
+                android:layout_marginTop="5dp"
+                android:background="@color/simple_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_all_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/my_order"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/title_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_check_all_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/check_all_order"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/liner_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                >
+
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/tv_order_wait_to_pay"
+                    style="@style/tv_order_state"
+                    android:text="@string/wait_to_pay"
+                    android:drawableTop="@drawable/img_order_wait_to_pay"
+                    app:badge_gravity="rightTop"
+                    app:badge_horizontalMargin="27dp"
+                    app:badge_verticalMargin="0dp"
+                    app:badge_padding="3dp"
+                    />
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_order_wait_to_pay"-->
+                <!--style="@style/rl_order_state">-->
+
+                <!--<cn.bingoogolapple.badgeview.BGABadgeImageView-->
+                    <!--android:id="@+id/img_order_wait_to_pay"-->
+                    <!--style="@style/iv_order_state"-->
+                    <!--android:src="@drawable/img_order_wait_to_pay"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/tv_order_state"-->
+                    <!--android:text="@string/wait_to_pay"-->
+                    <!--android:layout_below="@id/img_order_wait_to_pay"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/tv_order_wait_to_comment"
+                    style="@style/tv_order_state"
+                    android:text="@string/wait_to_comment"
+                    android:drawableTop="@drawable/img_order_wait_to_comment"
+                    app:badge_gravity="rightTop"
+                    app:badge_horizontalMargin="27dp"
+                    app:badge_verticalMargin="0dp"
+                    app:badge_padding="3dp"/>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_order_wait_to_comment"-->
+                    <!--style="@style/rl_order_state">-->
+
+                    <!--<cn.bingoogolapple.badgeview.BGABadgeImageView-->
+                        <!--android:id="@+id/img_order_wait_to_comment"-->
+                        <!--style="@style/iv_order_state"-->
+                        <!--android:src="@drawable/img_order_wait_to_comment"/>-->
+
+                    <!--<TextView-->
+                        <!--style="@style/tv_order_state"-->
+                        <!--android:text="@string/wait_to_comment"-->
+                        <!--android:layout_below="@id/img_order_wait_to_comment"/>-->
+                <!--</RelativeLayout>-->
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/tv_order_already_finished"
+                    style="@style/tv_order_state"
+                    android:text="@string/already_finished"
+                    android:drawableTop="@drawable/img_order_already_finished"
+                    app:badge_gravity="rightTop"
+                    app:badge_horizontalMargin="27dp"
+                    app:badge_verticalMargin="0dp"
+                    app:badge_padding="3dp"/>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_order_already_finished"-->
+                    <!--style="@style/rl_order_state">-->
+
+                    <!--<cn.bingoogolapple.badgeview.BGABadgeImageView-->
+                        <!--android:id="@+id/img_order_already_finished"-->
+                        <!--style="@style/iv_order_state"-->
+                        <!--app:badge_horizontalMargin="15dp"-->
+                        <!--app:badge_padding="3dp"-->
+                        <!--app:badge_verticalMargin="0dp"-->
+                        <!--android:src="@drawable/img_order_already_finished"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--style="@style/tv_order_state"-->
+                        <!--android:text="@string/already_finished"-->
+                        <!--android:layout_below="@id/img_order_already_finished"/>-->
+                <!--</RelativeLayout>-->
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/tv_order_refund"
+                    style="@style/tv_order_state"
+                    android:text="@string/refund"
+                    android:drawableTop="@drawable/img_order_refund"
+                    app:badge_gravity="rightTop"
+                    app:badge_horizontalMargin="27dp"
+                    app:badge_verticalMargin="0dp"
+                    app:badge_padding="3dp"/>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_order_refund"-->
+                    <!--style="@style/rl_order_state">-->
+
+                    <!--<cn.bingoogolapple.badgeview.BGABadgeImageView-->
+                        <!--android:id="@+id/img_order_refund"-->
+                        <!--style="@style/iv_order_state"-->
+                        <!--android:src="@drawable/img_order_refund"/>-->
+
+                    <!--<TextView-->
+                        <!--style="@style/tv_order_state"-->
+                        <!--android:text="@string/refund"-->
+                        <!--android:layout_below="@id/img_order_refund"/>-->
+                <!--</RelativeLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_my_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/my_wallet"
+                    android:layout_weight="1"
+                    style="@style/setting_textview"
+            />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/simple_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:padding="5dp"
+                        android:text="@string/my_points"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/setting_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_my_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:text="105分"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/item_content_text_size_14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_commoninfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/common_infos"
+                    style="@style/setting_textview"/>
+
+                <include layout="@layout/view_line"></include>
+
+                <TextView
+                    android:id="@+id/tv_my_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/my_collections"
+                    style="@style/setting_textview"/>
+
+                <include layout="@layout/view_line"></include>
+
+                <TextView
+                    android:id="@+id/tv_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings"
+                    style="@style/setting_textview"/>
+
+                <include layout="@layout/view_line"></include>
+
+                <TextView
+                    android:id="@+id/tv_suggestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/suggestions"
+                    style="@style/setting_textview"/>
+
+                <include layout="@layout/view_line"></include>
+
+                <TextView
+                    android:id="@+id/tv_more_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/more"
+                    style="@style/setting_textview"/>
+
+                <include layout="@layout/view_line"></include>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 填充 -->
+    <solid android:color="@color/orange" />
+    <!-- 圆角 -->
+    <corners android:radius="2dp" />
+    <stroke android:color="@color/orange"
+        android:width="1px"
+        />
+</shape>
+
+    <!--solid设置填充颜色，颜色值以#80开头表示透明 stroke 设置边框宽度，颜色值 corners设置圆角-->

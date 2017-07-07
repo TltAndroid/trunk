@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/simple_gray"
+    android:focusable="true"
+    android:id="@+id/rl_send_register_code"
+    tools:context="com.sirc.tlt.ui.activity.SendRegisterCodeActivity">
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/send_register_code_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/sms_registe"
+        />
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/send_register_code_title"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        />
+
+    <!--<com.sirc.tlt.ui.view.ClearableEditText-->
+        <!--android:id="@+id/edit_register_area"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--style="@style/editTextWithDelete"-->
+        <!--android:hint="@string/input_phone"-->
+        <!--android:textColor="@color/text_black"-->
+        <!--android:background="@null"-->
+        <!--android:padding="5dp"-->
+        <!--android:textColorHint="@color/text_gray"-->
+        <!--android:layout_marginTop="150dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--/>-->
+
+
+    <LinearLayout
+        android:id="@+id/liner_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_black"
+            android:text="@string/tv_country_area"
+            android:padding="5dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_register_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_black"
+            android:text="@string/tv_choose_cl"
+            android:padding="5dp"
+            android:gravity="left"
+            android:drawableRight="@drawable/img_right_arrow"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_gray3"
+        android:layout_below="@id/liner_area"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.sirc.tlt.ui.view.ClearableEditText
+        android:id="@+id/edit_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/editTextWithDelete"
+        android:hint="@string/input_phone"
+        android:textColor="@color/text_black"
+        android:background="@null"
+        android:padding="5dp"
+        android:textColorHint="@color/text_gray"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tv_view_line"
+        />
+
+
+    <Button
+        android:id="@+id/btn_send_register_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edit_register"
+        android:text="@string/send_sms_code"
+        android:background="@color/background_blue"
+        android:textSize="@dimen/login_or_register"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_law_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/law_register"
+        android:layout_below="@id/btn_send_register_code"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_not_have_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_registe"
+        android:layout_below="@id/btn_send_register_code"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_gray"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>

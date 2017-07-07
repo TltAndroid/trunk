@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/simple_gray"
+    android:fitsSystemWindows="true"
+    tools:context="com.sirc.tlt.ui.activity.SignInActivity">
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/sign_in_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canBack="true"
+        app:titleText="@string/sign_in_title"/>
+
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="@string/btn_sign_in"
+        android:textSize="@dimen/login_or_register"
+        android:background="@color/background_blue"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sign_in_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/sign_in_title"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_sign_in_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/sign_in_remind"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/sign_in_remind"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/ios7_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray3"
+            android:layout_below="@id/sign_in_remind"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_remind_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rl_sign_in_remind"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_time_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/remind_time"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

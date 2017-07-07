@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_left_bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_origin"
+        android:text="中国人民网"
+        style="@style/news_left_bottom_text" />
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="344评论"
+        style="@style/news_left_bottom_text"/>
+
+    <TextView
+        android:id="@+id/tv_post_time"
+        android:text="2017-03-03"
+        style="@style/news_left_bottom_text"/>
+</LinearLayout>

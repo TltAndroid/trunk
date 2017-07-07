@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+    android:id="@+id/HomeTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        app:titleText="@string/app_name"
+        app:moreImg="@drawable/img_swipe"/>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/HomeTitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/background_blue"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="gone">-->
+
+        <!--<com.sirc.tlt.ui.view.SearchEditText-->
+            <!--android:id="@+id/home_search_edit"-->
+            <!--style="@style/editTextStyle"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="7"-->
+            <!--android:background="@color/simple_gray"-->
+            <!--android:focusable="false"-->
+            <!--android:padding="3dp"-->
+            <!--android:visibility="gone"/>-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/img_swipe"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/img_swipe" />&ndash;&gt;-->
+    <!--</LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/HomeTitle"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/simple_gray">
+
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/roll_pager_view"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/simple_gray"
+                app:rollviewpager_play_delay="3000"/>
+
+            <ImageView
+                android:id="@+id/img_swipe"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_swipe"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/liner_tlt_service_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/roll_pager_view"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_tlt_service_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/roll_pager_view"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/tlt_service"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/title_text_size"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/background_gray3"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_phone_card"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_phone_card" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/tlt_phone_card"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_rent_mifi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/img_rent_mify" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/tlt_rent_mifi"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_flow_card"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/img_flow_card" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/tlt_flow_card"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_recharge_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_recharge_phone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/tlt_recharge_phone"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_railway_ticket"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_railway_ticket" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/tlt_railway_ticket"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_boat_ticket"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_boat_ticket" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/tlt_boat_ticket"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/background_gray3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_identify_card"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_tw_identify_card" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/tlt_tw_identify_card"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_rent_car"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_rent_car" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/tlt_rent_car"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_entry_card"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_tw_entry_card" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/tlt_tw_entry_card"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_tlt_service_legwork"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_legwork" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/tlt_legwork"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/background_gray3"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/liner_first_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/haokan_first_news"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/activity"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/questions_comment_text_size"
+                        android:textColor="@color/actionsheet_red"
+                        android:gravity="center"
+                        />
+
+                    <com.sunfusheng.marqueeview.MarqueeView
+                        android:id="@+id/marqueeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:mvAnimDuration="1000"
+                        app:mvInterval="3000"
+                        app:mvTextColor="@color/text_gray"
+                        app:mvTextSize="@dimen/questions_comment_text_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/liner_home_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/liner_tlt_service_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_where_weekend"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="@string/where_go_weekend"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:textSize="@dimen/title_text_size"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:gravity="center"/>-->
+
+                <ImageView
+                    android:id="@+id/tv_where_weekend"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img_toutiao"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/transparent"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_toutiao_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_more"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/text_gray"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:layout_alignBottom="@id/tv_where_weekend"
+                    android:paddingBottom="8dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/liner_tt_lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/tv_where_weekend"
+                    android:layout_toLeftOf="@id/tv_toutiao_more"
+                    android:layout_alignTop="@id/tv_where_weekend"
+                    android:layout_alignBottom="@id/tv_where_weekend"
+                    android:layout_marginLeft="5dp">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="创业"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:textColor="@color/text_gray"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="@drawable/text_view_border"-->
+                        <!--android:padding="3dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="就业"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:textColor="@color/text_gray"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="@drawable/text_view_border"-->
+                        <!--android:padding="3dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="培训"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:textColor="@color/text_gray"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="@drawable/text_view_border"-->
+                        <!--android:padding="3dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="惠台"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:textColor="@color/text_gray"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="@drawable/text_view_border"-->
+                        <!--android:padding="3dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="会训"-->
+                        <!--android:textSize="@dimen/sp_14"-->
+                        <!--android:textColor="@color/text_gray"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:background="@drawable/text_view_border"-->
+                        <!--android:padding="3dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--/>-->
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_toutiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/tv_where_weekend"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/liner_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liner_home_recyclerView"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_actions"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img_activities"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_action_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/find_more"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/text_gray"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:drawableRight="@drawable/ic_right_arrow"
+                        android:layout_centerVertical="true"
+                        />
+
+                <LinearLayout
+                    android:id="@+id/liner_add_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/img_actions"
+                    android:layout_toLeftOf="@id/tv_action_more"
+                    android:layout_alignTop="@id/img_actions"
+                    android:layout_alignBottom="@id/img_actions"
+                    android:orientation="horizontal">
+                </LinearLayout>
+
+              </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_actions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/liner_guess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_below="@id/liner_activities"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_guess_fancy_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_guess_fancy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/guess_fancy"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_guess_fancy_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/find_more"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/text_gray"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:drawableRight="@drawable/ic_right_arrow"
+                        android:layout_alignBottom="@id/tv_guess_fancy"
+                        android:paddingBottom="5dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner_guess_fancy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_guess_fancy_title"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/liner_third_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liner_guess"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_third_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/liner_guess_fancy"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/third_service"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/title_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_food"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_food" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/third_service_food"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_hotel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_hotel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/third_service_hotel"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_bus"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_bus" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/third_service_bus"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_zhengxin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_zhengxin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/third_service_zhengxin"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/background_gray3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_express"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_express" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="@string/third_service_express"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_life"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_life" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/third_service_life"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_travel_around"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_travel_around" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/third_service_travel_around"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_third_service_eight_diagrams"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_eight_diagrams" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/third_service_eight_diagrams"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/tlt_content_text_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/background_gray3" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

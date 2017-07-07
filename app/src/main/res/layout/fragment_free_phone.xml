@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.sirc.tlt.ui.view.TemplateTitle
+        android:id="@+id/free_phone_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:titleText="@string/free_phone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_input_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/simple_gray"
+        android:layout_below="@id/free_phone_title">
+
+        <com.sirc.tlt.ui.view.DrawableCenterTextView
+            android:id="@+id/tv_choose_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="@dimen/sp_16"
+            android:text="@string/tv_choose_cl"
+            android:background="@color/simple_gray"
+            />
+
+        <EditText
+            android:id="@+id/edit_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/simple_gray"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/tv_choose_area"
+            android:layout_marginLeft="5dp"
+            android:maxLength="12"
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_num_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/transparent"
+            android:src="@drawable/img_phone_num_delete"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_free_phone_decribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_above="@+id/liner_phone_area"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_phone_intruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="温馨提示:\n
+1. 本免费电话分钟数指在大陆拨打内地电话和台湾固定电话通话时长;\n
+2. 使用本免费电话拨打，运营商不会收取任何费用;\n
+3. 拨打台湾移动电话及其他国际地区请在资费一览查询。"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12"
+            android:lineSpacingExtra="0dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_show_phone_mins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone_intruction"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/leave_minute"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_sign_for_mins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/add_for_mins"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_14"
+            android:layout_below="@id/tv_show_phone_mins"/>
+
+        <Button
+            android:id="@+id/btn_for_sign"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:text="@string/btn_for_sign"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:layout_below="@id/tv_show_phone_mins"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_phone_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="3dp"
+            android:background="@color/simple_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/view_phone_num"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibtn_take_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/img_phone_record"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparent"
+            />
+            <!--<ImageButton
+                android:id="@+id/ibtn_contact"
+                style="@style/imageButton_phone_num"
+                android:background="@drawable/bg_phone_num"
+                android:src="@drawable/img_contact"
+                android:visibility="gone" />-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/ibtn_num_delete"-->
+            <!--style="@style/imageButton_phone_num"-->
+            <!--android:background="@drawable/bg_phone_num"-->
+            <!--android:src="@drawable/img_phone_num_delete"-->
+            <!--android:visibility="gone"/>-->
+    </LinearLayout>
+</RelativeLayout>

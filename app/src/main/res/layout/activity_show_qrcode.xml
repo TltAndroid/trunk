@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/simple_gray"
+    tools:context="com.sirc.tlt.ui.activity.ShowQRCodeActivity">
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dip"
+        android:padding="10.0dip"
+        android:scaleType="center"
+        android:src="@drawable/category_edit_close" />
+
+    <ImageView
+        android:id="@+id/img_qr_code"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_qrcode_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_qr_code"
+        android:layout_margin="10dp"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/QRcode_describe"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
