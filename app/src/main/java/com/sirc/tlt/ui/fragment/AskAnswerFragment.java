@@ -102,7 +102,6 @@ public class AskAnswerFragment extends LazyFragment implements SwipeRefreshLayou
             isPrepared = true;
             isFirst = true;
         lazyLoad();
-        Log.d("fragment",TAG);
             return view;
     }
 
